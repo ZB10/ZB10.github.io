@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>520 浪漫表白页</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <!-- Font Awesome 图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 背景效果 -->
+    <div class="background-container">
+        <div id="particles-js"></div>
+        <div class="rose-petals"></div>
+    </div>
+
+    <!-- 主要内容区 -->
+    <div class="container">
+        <!-- 主标题 -->
+        <h1 class="main-title" id="couple-names">卓冰 ♡ 李从燕</h1>
+        
+        <!-- 水晶牌特效 -->
+        <div class="crystal-panel">
+            <!-- 时间胶囊 -->
+            <div class="time-capsule">
+                <div class="love-counter">
+                    <span class="counter-label">▷ 相爱计时器</span>
+                    <span id="days-counter">626</span>
+                    <span class="counter-unit">天</span>
+                </div>
+                
+                <!-- 纪念日坐标 -->
+                <div class="anniversary">
+                    <span>📅 始于</span>
+                    <span id="start-date">2023.09.02</span>
+                    <span>的宇宙级浪漫</span>
+                </div>
+            </div>
+            
+            <!-- 隐藏情书 -->
+            <div class="hidden-letter">
+                <div class="letter-trigger">
+                    <i class="fas fa-heart"></i>
+                    <span>点击查看情书</span>
+                </div>
+                <div class="letter-content">
+                    <div class="letter-paper">
+                        <p id="love-letter">这里是你的情书内容，可以写下你想对对方说的话...</p>
+                        <p class="signature" id="signature">爱你的 卓冰</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 交互彩蛋 -->
+    <div class="easter-egg">
+        <button id="scent-button">点击嗅闻玫瑰香气</button>
+    </div>
+
+    <!-- 音乐控制 -->
+    <div class="music-control">
+        <button id="music-toggle">
+            <i class="fas fa-music"></i>
+        </button>
+        <audio id="background-music" loop>
+            <source src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.5.1/music/a-thousand-years-piano.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- 配置面板 -->
+    <div class="config-panel">
+        <button id="config-toggle">
+            <i class="fas fa-cog"></i>
+        </button>
+        <div class="config-content">
+            <h3>自定义设置</h3>
+            <div class="config-item">
+                <label for="your-name">你的名字:</label>
+                <input type="text" id="your-name" placeholder="YOUR-NAME">
+            </div>
+            <div class="config-item">
+                <label for="partner-name">对方名字:</label>
+                <input type="text" id="partner-name" placeholder="PARTNER-NAME">
+            </div>
+            <div class="config-item">
+                <label for="anniversary-date">纪念日:</label>
+                <input type="date" id="anniversary-date">
+            </div>
+            <div class="config-item">
+                <label for="custom-letter">自定义情书:</label>
+                <textarea id="custom-letter" rows="4" placeholder="写下你的情书..."></textarea>
+            </div>
+            <button id="save-config">保存设置</button>
+        </div>
+    </div>
+
+    <!-- JavaScript 库 -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/script.js"></script>
+</body>
+</html> 
